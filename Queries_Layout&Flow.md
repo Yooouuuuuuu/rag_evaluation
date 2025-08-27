@@ -1,7 +1,7 @@
 # Queries Flow
 
 ```mermaid
-graph TD
+graph LR
     subgraph "Data Update and Extraction"
         A[New Queries Input] --> B[Master XLSX File]
         B --> |Extract for Processing| C[JSON Export]

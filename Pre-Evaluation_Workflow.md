@@ -1,7 +1,7 @@
 # Pre-Evaluation Workflow
 
 ```mermaid
-graph TD
+graph LR
     subgraph "Pre-Evaluation Workflow"
         A[Query Input] --> B[RAG System Response]
         
