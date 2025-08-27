@@ -1,8 +1,10 @@
-# Pre-Evaluation Workflow
+# Phase1 - Pre-Evaluation
+
+## How It Works
 
 ```mermaid
 graph LR
-    subgraph "Pre-Evaluation Workflow"
+    subgraph "Workflow"
         A[Query Input] --> B[RAG System Response]
         
         subgraph "Evaluation Tools"
@@ -56,14 +58,16 @@ graph LR
     
 ```
 
-**Challenge Types Reference:**
+## Notes
+
+### Challenge Types Reference
 
 - **unanswerable** - No answer exists in DB (trap query)
 - **multi_document** - Requires combining multiple sources  
 - **multi_answer** - Multiple valid answers exist
 - **domain_expert** - Requires specialized knowledge
 
-**Tools Description:**
+### Tools Description
 
 - **LLM-as-Judge** - Nuanced evaluation using language models for accuracy and relevance
 - **Embedding Recall Check** - Query-to-chunks similarity for retrieval quality

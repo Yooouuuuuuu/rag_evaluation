@@ -1,4 +1,4 @@
-# Queries Flow
+# Dataset Update Flow
 
 ```mermaid
 graph LR
@@ -16,7 +16,7 @@ graph LR
 
 ```
 
-## Queries Layout
+## Dataset Layout
 
 ### XLSX Lifecycle Flow
 
@@ -68,14 +68,12 @@ graph LR
 
 ---
 
-### Implementation Strategy
+### Phase 2 Extension Columns (scores)
 
-#### Configuration-Driven Column Generation
+this part is not finished
 
-```python
-retrieval_config = {
-    'top_k': 20,  # Creates retrieved_context_1 through retrieved_context_20
-}
+will add some pahse 2 scores at last
 
-phase1_columns = base_columns + [f'retrieved_context_{i}' for i in range(1, top_k+1)]
+if has phase 3, same.
 
+this will be the final output for evaluation
